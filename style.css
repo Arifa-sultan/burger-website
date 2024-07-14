@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif;
+    
+}
+/* header  */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347; /* Tomato color for logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+.cta {
+    background: #ff6347;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: #e5533d; /* Slightly darker tomato color on hover */
+}
+/* hero section  */
+.hero {
+    background: url('images.jfif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .cta {
+    background: #ff6347;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .cta:hover {
+    background: #e5533d; /* Slightly darker tomato color on hover */
+}
+/* menu hightlights  */
+section#menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#menu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Tomato color for section title */
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6347; /* Tomato color for item title */
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.cta {
+    display: inline-block;
+    background: #ff6347;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: #e5533d; /* Slightly darker tomato color on hover */
+}
+/* special offer  */
+section#offers {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#offers h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Tomato color for section title */
+}
+
+.offer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offer-item {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+}
+
+.offer-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6347; /* Tomato color for item title */
+}
+
+.offer-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.cta {
+    display: inline-block;
+    background: #ff6347;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: #e5533d; /* Slightly darker tomato color on hover */
+}
+/* Customer Testimonials */
+section#testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Tomato color for section title */
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-item {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.testimonial-item span {
+    font-size: 14px;
+    color: #ff6347; /* Tomato color for customer name */
+}
+/* location and hours  */
+section#location-hours {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#location-hours h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Tomato color for section title */
+}
+
+.location-hours-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.location, .hours {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.location:hover, .hours:hover {
+    transform: translateY(-10px);
+}
+
+.location h3, .hours h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6347; /* Tomato color for subsection titles */
+}
+
+.location p, .hours ul {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.hours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hours ul li {
+    margin-bottom: 10px;
+}
+/* signup */
+section#newsletter {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#newsletter h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6347; /* Tomato color for section title */
+}
+
+section#newsletter p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+    color: #bbb;
+}
+
+.newsletter-form button.cta {
+    background: #ff6347;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button.cta:hover {
+    background: #e5533d; /* Slightly darker tomato color on hover */
+}
+/* footer  */
+footer {
+    background: #2a2a2a;
+    color: #f0f0f0;
+    padding: 50px 20px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff6347; /* Tomato color for section titles */
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+.footer-section .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section .social-links li {
+    display: inline-block;
+}
+
+.footer-section .social-links li a img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* White icons for dark background */
+    transition: filter 0.3s;
+}
+
+.footer-section .social-links li a:hover img {
+    filter: brightness(0) invert(0.7); /* Slightly darker icon on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
